@@ -60,5 +60,5 @@ I hope to find a better-suited tool for this purpose in the future.
 I am also hoping to investigate the game with some of the reinforcement learning
 algorithms I have recently learned.
 
-![tree 3](tree3.svg)
-![tree 5](tree5.svg)
+![tree 3](images/tree3.svg)
+![tree 5](images/tree5.svg)

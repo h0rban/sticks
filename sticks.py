@@ -15,18 +15,18 @@ class Sticks:
 
   def step(self):
 
-    state = self.state.__copy__()
-    if state.is_terminal():
+    prev_state = self.state.__copy__()
+    if prev_state.is_terminal():
       raise ValueError('game is over')
 
-    action = self.agents[state.player].get_action(state)
+    action = self.agents[prev_state.player].get_action(prev_state)
     self.state.step(action)
 
     if self.log:
       print({
         't': self.t,
-        'state': state.get_tuple()[1:],
-        'agent': state.player,
+        'state': prev_state.get_tuple()[1:],
+        'agent': prev_state.player,
         'action': action,
         'next_state': self.state.get_tuple()[1:],
         'game_over': self.state.is_terminal()
