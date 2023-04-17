@@ -27,7 +27,9 @@ next state is (1, 1, 1, 1, 2). Notice that to reduce the number of states, we ca
 write the number of sticks in a player's hand in ascending order.
 
 The total number of states then is
-![equation](https://latex.codecogs.com/svg.image?\tiny&space;2\Bigg(\sum_{i=0}^{4}\sum_{j=i}^{4}1\Bigg)^2=450)
+
+![equation](https://latex.codecogs.com/png.image?\inline&space;\tiny&space;\dpi{300}\bg{white}2\Big(\sum_{i=0}^{4}\sum_{j=i}^{4}1\Big)^2=450)
+
 although some of them are going to be unreachable. In fact, my experiments show that
 there are 306 reachable states.
 
