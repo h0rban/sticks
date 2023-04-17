@@ -26,8 +26,9 @@ class Sticks:
       print({
         't': self.t,
         'state': state.get_tuple()[1:],
-        'agent': self.state.player,
+        'agent': state.player,
         'action': action,
+        'next_state': self.state.get_tuple()[1:],
         'game_over': self.state.is_terminal()
       })
 

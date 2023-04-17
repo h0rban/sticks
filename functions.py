@@ -242,3 +242,10 @@ def build_graph(max_depth):
   recursion(State(), max_depth)
 
   return graph, secondary_edges
+
+
+def build_and_draw_tree(max_depth=float('inf'), figure_size=(8, 6),
+    file_name=None):
+  graph, secondary_edges = build_graph(max_depth)
+  draw_tree_with_edge_labels(graph, 'action', secondary_edges,
+                             figure_size=figure_size, file_name=file_name)
